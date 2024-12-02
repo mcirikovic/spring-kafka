@@ -130,7 +130,7 @@ public class EmbeddedKafkaKraftBroker implements EmbeddedKafkaBroker {
 	 * @see KafkaConfig
 	 */
 	@Override
-	public EmbeddedKafkaBroker brokerProperties(Map<String, String> properties) {
+	public EmbeddedKafkaKraftBroker brokerProperties(Map<String, String> properties) {
 		this.brokerProperties.putAll(properties);
 		return this;
 	}
@@ -141,7 +141,7 @@ public class EmbeddedKafkaKraftBroker implements EmbeddedKafkaBroker {
 	 * @param value the value.
 	 * @return the {@link EmbeddedKafkaKraftBroker}.
 	 */
-	public EmbeddedKafkaBroker brokerProperty(String property, Object value) {
+	public EmbeddedKafkaKraftBroker brokerProperty(String property, Object value) {
 		this.brokerProperties.put(property, value);
 		return this;
 	}
@@ -170,7 +170,7 @@ public class EmbeddedKafkaKraftBroker implements EmbeddedKafkaBroker {
 	 * @since 2.3
 	 */
 	@Override
-	public EmbeddedKafkaBroker brokerListProperty(String brokerListProperty) {
+	public EmbeddedKafkaKraftBroker brokerListProperty(String brokerListProperty) {
 		this.brokerListProperty = brokerListProperty;
 		return this;
 	}
@@ -181,7 +181,7 @@ public class EmbeddedKafkaKraftBroker implements EmbeddedKafkaBroker {
 	 * @return the {@link EmbeddedKafkaKraftBroker}
 	 * @since 2.8.5
 	 */
-	public EmbeddedKafkaBroker adminTimeout(int adminTimeout) {
+	public EmbeddedKafkaKraftBroker adminTimeout(int adminTimeout) {
 		this.adminTimeout = Duration.ofSeconds(adminTimeout);
 		return this;
 	}
