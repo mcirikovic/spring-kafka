@@ -187,7 +187,7 @@ public class EmbeddedKafkaZKBroker implements EmbeddedKafkaBroker {
 	 * @param value the value.
 	 * @return the {@link EmbeddedKafkaBroker}.
 	 */
-	public EmbeddedKafkaBroker brokerProperty(String property, Object value) {
+	public EmbeddedKafkaZKBroker brokerProperty(String property, Object value) {
 		this.brokerProperties.put(property, value);
 		return this;
 	}
